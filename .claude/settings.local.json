@@ -5,7 +5,13 @@
       "Bash(npx tsc:*)",
       "Bash(npm install:*)",
       "Bash(./node_modules/.bin/tsc)",
-      "Bash(npm i:*)"
+      "Bash(npm i:*)",
+      "Bash(npm ls:*)",
+      "Bash(node -e \"console.log\\(process.version\\)\")",
+      "Bash(npm test:*)",
+      "Bash(timeout 20 node --test dist/test/gridfs.test.js)",
+      "Bash(env)",
+      "Bash(find /c/Users/alecb/AppData -type f -name *.json)"
     ]
   }
 }
