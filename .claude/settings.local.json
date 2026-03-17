@@ -11,7 +11,11 @@
       "Bash(npm test:*)",
       "Bash(timeout 20 node --test dist/test/gridfs.test.js)",
       "Bash(env)",
-      "Bash(find /c/Users/alecb/AppData -type f -name *.json)"
+      "Bash(find /c/Users/alecb/AppData -type f -name *.json)",
+      "Bash(docker build:*)",
+      "Bash(docker run:*)",
+      "Read(//c/Users/alecb/WebstormProjects/mongo-grid-mcp/$APPDATA/Claude/**)",
+      "Read(//c/Users/alecb/WebstormProjects/mongo-grid-mcp/$HOME/.config/claude/**)"
     ]
   }
 }
