@@ -7,7 +7,9 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc && node dist/index.js",
-    "test": "tsc && node --test dist/test/gridfs.test.js"
+    "test": "tsc && node --test dist/test/gridfs.test.js",
+    "docker:build": "docker build -t mongo-grid-mcp .",
+    "docker:test": "echo {\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-03-26\",\"capabilities\":{},\"clientInfo\":{\"name\":\"test\",\"version\":\"1.0.0\"}}} | docker run -i --rm -e MONGODB_URI=mongodb://admin:secret@host.docker.internal:27017 -e MONGODB_DB=gridfs_store mongo-grid-mcp"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
