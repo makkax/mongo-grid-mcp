@@ -110,9 +110,3 @@ src/
 - Files are stored in the GridFS bucket of the database specified by `MONGODB_DB`.
 - Upload metadata should follow a structured JSON format including fields like `tipo`, `source`, `tags`, `progetto`, `createdAt` for best queryability.
 - For advanced metadata queries (e.g. filter by tag or project), use `mongodb-mcp` directly on `gridfs_store.fs.files`.
-
----
-
-## Repository
-
-Private — `makkax/mongo-grid-mcp` on GitHub.
