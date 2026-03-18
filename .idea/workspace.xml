@@ -24,7 +24,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/makkax/mongo-grid-mcp.git&quot;,
-    &quot;accountId&quot;: &quot;999b2063-5368-40df-a992-ca36d335125d&quot;
+    &quot;accountId&quot;: &quot;70219977-33db-4833-9f24-4c2cd8519dad&quot;
   }
 }</component>
   <component name="PackageJsonUpdateNotifier">
@@ -48,11 +48,14 @@
     &quot;Node.js Test Runner.gridfs.test.ts.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.gridfs.test.ts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -61,7 +64,8 @@
     &quot;npm.GridFS Tests.executor&quot;: &quot;Run&quot;,
     &quot;npm.build.executor&quot;: &quot;Run&quot;,
     &quot;npm.docker:build.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alecb\\WebstormProjects\\mongo-grid-mcp\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -98,6 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1773781113167</updated>
       <workItem from="1773781114592" duration="4762000" />
+      <workItem from="1773820372503" duration="42000" />
+      <workItem from="1773820430693" duration="652000" />
     </task>
     <task id="LOCAL-00001" summary="first version">
       <option name="closed" value="true" />
