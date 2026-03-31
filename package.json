@@ -1,7 +1,7 @@
 {
   "name": "mongo-grid-mcp",
-  "version": "1.0.0",
-  "description": "MCP server per MongoDB GridFS",
+  "version": "1.1.0",
+  "description": "MCP server per MongoDB GridFS — upload/download/relay/watch/cleanup",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

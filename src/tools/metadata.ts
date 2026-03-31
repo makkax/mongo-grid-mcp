@@ -25,13 +25,18 @@ export function registerMetadata(server: McpServer) {
       }
 
       const f = files[0];
+      const { text_content, ...metaRest } = (f.metadata ?? {}) as Record<string, unknown>;
+      const textChars = typeof text_content === "string" ? text_content.length : 0;
       const result = {
         id: f._id.toString(),
         filename: f.filename,
         length: f.length,
         chunkSize: f.chunkSize,
         uploadDate: f.uploadDate?.toISOString(),
-        metadata: f.metadata,
+        metadata: {
+          ...metaRest,
+          ...(textChars > 0 ? { text_chars: textChars } : {}),
+        },
       };
 
       return {

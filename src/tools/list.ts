@@ -22,13 +22,17 @@ export function registerList(server: McpServer) {
       if (limit) cursor.limit(limit);
       const files = await cursor.toArray();
 
-      const result = files.map((f) => ({
-        id: f._id.toString(),
-        filename: f.filename,
-        length: f.length,
-        uploadDate: f.uploadDate?.toISOString(),
-        metadata: f.metadata,
-      }));
+      const result = files.map((f) => {
+        const { text_content, ...metaRest } = (f.metadata ?? {}) as Record<string, unknown>;
+        const textChars = typeof text_content === "string" ? text_content.length : 0;
+        return {
+          id: f._id.toString(),
+          filename: f.filename,
+          length: f.length,
+          uploadDate: f.uploadDate?.toISOString(),
+          metadata: { ...metaRest, ...(textChars > 0 ? { text_chars: textChars } : {}) },
+        };
+      });
 
       return {
         content: [
